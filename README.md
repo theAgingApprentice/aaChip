@@ -7,7 +7,7 @@
 * [Microprocessor compatibility](#Microprocessor-compatibility)
 * [Installing](#Installing)
 * [Running tests](#Running-tests)
-* [Versioning](#Versioning)
+* [Releases](#Releases)
 * [Acknowledgements](#Acknowledgements)
 
 ## Overview
