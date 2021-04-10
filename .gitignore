@@ -45,4 +45,5 @@
 *output.map
 
 # Doxygen
-*doc*
+*docs/htm*
+*docs/lat*
