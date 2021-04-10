@@ -15,7 +15,6 @@ This repository contains an Arduino library that provides your project with a [F
 
 ## Development environment
 This library was written using the following tools:
-
 * [<img src="/img/vscLogo.png" width="15" height="15">](https://code.visualstudio.com/docs) Microsoft's Visual Studio Code source code editor. 
 * [<img src="/img/pioLogo.png" width="20" height="15">](https://platformio.org/) PlatformIO plugin [embedded software](https://en.wikipedia.org/wiki/Embedded_software) application [IDE](https://en.wikipedia.org/wiki/Integrated_development_environment). 
 
@@ -23,9 +22,6 @@ If you are using the standard Arduino IDE for your project then you should proba
 
 ## Code documentation
 As part of our CI/CD software development process we use [Github Actions](https://docs.github.com/en/actions) to automatically generate up-to-date documentation via [Doxygen](https://www.doxygen.nl/index.html) every time the MAIN branch gets updated. The output from Doxygen is placed in the docs folder found in the root of the repository. This repository has an associated [Github Pages](https://pages.github.com/) site that contains all of the Doxygen tags and assorted embedded comments from the code itself. This documentation can be viewed in your web browser [here](https://theagingapprentice.github.io/aaChip/).    
-
-
-1. [Arduino Core library for ESP32](https://github.com/espressif/arduino-esp32). This library comes as part of the Arduino framework when using Platform.io.
 
 ## Microprocessor compatibility
 This library has only been tested on the [Adafruit Huzzah32](https://learn.adafruit.com/adafruit-huzzah32-esp32-feather) development board containing the [Espressif ESP WROOM32 SOC](https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf) featuring a pair of [Cadence/Xtensa®32-bit LX6 microprocessors](https://mirrobo.ru/wp-content/uploads/2016/11/Cadence_Tensillica_Xtensa_LX6_ds.pdf). 
@@ -39,7 +35,7 @@ These instructions assume that you have [Git](https://git-scm.com/) installed on
 
 ## Running tests
 
-At this time there are no automated tests for this application.
+As part of our CI/CD software development process we use the PlatformIO unit testing tool called unity to run the test script test_main.cpp located located in the test directory off the root of the repository. Full instrucitns on how to write and run these tests can be found on the PlatformIO website [here]((https://docs.platformio.org/en/latest/tutorials/espressif32/arduino_debugging_unit_testing.html#writing-unit-tests)).
 
 ## Releases
 
