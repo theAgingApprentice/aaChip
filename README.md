@@ -19,7 +19,7 @@ This library was written using the following tools:
 * [<img src="/img/vscLogo.png" width="15" height="15">](https://code.visualstudio.com/docs) Microsoft's Visual Studio Code source code editor. 
 * [<img src="/img/pioLogo.png" width="20" height="15">](https://platformio.org/) PlatformIO plugin [embedded software](https://en.wikipedia.org/wiki/Embedded_software) application [IDE](https://en.wikipedia.org/wiki/Integrated_development_environment). 
 
-If you are using the standard Arduino IDE for your project then you should probably avoid using this library unless you are comfortable navigating the subtle differences bewteen how your envoronment bahaves and how the environment used to create this library behaved.
+<span style="color:green">suggestion:</span> If you are using the standard Arduino IDE for your project then you should probably avoid using this library unless you are comfortable navigating the subtle differences bewteen how your envoronment bahaves and how the environment used to create this library behaved.
 
 ## Code documentation
 As part of our CI/CD software development process we use [Github Actions](https://docs.github.com/en/actions) to automatically generate up-to-date documentation via [Doxygen](https://www.doxygen.nl/index.html) every time the MAIN branch gets updated. The output from Doxygen is placed in the docs folder found in the root of the repository. This repository has an associated [Github Pages](https://pages.github.com/) site that contains all of the Doxygen tags and assorted embedded comments from the code itself. This documentation can be viewed in your web browser [here](https://theagingapprentice.github.io/aaChip/).    
