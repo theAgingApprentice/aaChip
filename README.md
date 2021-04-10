@@ -36,7 +36,7 @@ These instructions assume that you have [Git](https://git-scm.com/) installed on
 
 ## Running tests
 
-As part of our CI/CD software development process we use the PlatformIO C/C++ unit testing tool called [unity](https://github.com/ThrowTheSwitch/Unity) to run the test script test_main.cpp located located in the test directory off the root of the repository. Full instrucitns on how to write and run these tests can be found on the PlatformIO website [here](https://docs.platformio.org/en/latest/tutorials/espressif32/arduino_debugging_unit_testing.html#writing-unit-tests).
+As part of our CI/CD software development process we use the PlatformIO C/C++ unit testing tool called [unity](https://github.com/ThrowTheSwitch/Unity) to run the test script test_main.cpp located located in the test directory off the root of the repository. Full instrucitns on how to write and run these tests can be found on the PlatformIO website [here](https://docs.platformio.org/en/latest/tutorials/espressif32/arduino_debugging_unit_testing.html#writing-unit-tests). We are currenty also loking at TravisCI to see if we wish to automate test scripts during checkin. 
 
 ## Releases
 
