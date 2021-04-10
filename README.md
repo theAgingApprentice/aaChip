@@ -3,7 +3,7 @@
 ## Table of contents
 * [Overview](#Overview)
 * [Development environment](#Development-environment)
-* [Code dependencies](#Code-dependencies)
+* [Code documentation](#Code-documentation)
 * [Microprocessor compatibility](#Microprocessor-compatibility)
 * [Installing](#Installing)
 * [Running tests](#Running-tests)
@@ -21,8 +21,9 @@ This library was written using the following tools:
 
 If you are using the standard Arduino IDE for your project then you should probably avoid using this library unless you are comfortable navigating the subtle differences bewteen how your envoronment bahaves and how the environment used to create this library behaved.
 
-## Code dependencies
-This library requires that your project include the following Arduino libraries:
+## Code documentation
+As part of our CI/CD software development process we use [Github Actions](https://docs.github.com/en/actions) to automatically generate up-to-date documentation via [Doxygen](https://www.doxygen.nl/index.html) every time the MAIN branch gets updated. The output from Doxygen is placed in the docs folder found in the root of the repository. This repository has an associated [Github Pages](https://pages.github.com/) site that contains all of the Doxygen tags and assorted embedded comments from the code itself. This documentation can be viewed in your web browser [here](https://theagingapprentice.github.io/aaChip/).    
+
 
 1. [Arduino Core library for ESP32](https://github.com/espressif/arduino-esp32). This library comes as part of the Arduino framework when using Platform.io.
 
