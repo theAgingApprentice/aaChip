@@ -35,15 +35,12 @@ These instructions assume that you have [Git](https://git-scm.com/) installed on
 3. Issue the command `git remote`. If you get back the response *origin* then you are all set. If you get a blank response back then you must set up an association to the remote repository by issuing the command `git remote add origin https://github.com/theAgingApprentice/aaChip.git` to set up the remote. 
 
 ## Running tests
-
 As part of our CI/CD software development process we use the PlatformIO C/C++ unit testing tool called [unity](https://github.com/ThrowTheSwitch/Unity) to run the test script test_main.cpp located located in the test directory off the root of the repository. Full instrucitns on how to write and run these tests can be found on the PlatformIO website [here](https://docs.platformio.org/en/latest/tutorials/espressif32/arduino_debugging_unit_testing.html#writing-unit-tests). We are currenty also loking at TravisCI to see if we wish to automate test scripts during checkin. 
 
 ## Releases
-
 * We use the [SemVer](http://semver.org/) numbering scheme for our releases. 
 * There is no stable release of this library at this time. 
 
 ## Acknowledgements
-
 * The many folks involved in porting the Arduino libraries over to the ESP32 SOC.
 * Adafruit for their excellent freely available tutorials.
