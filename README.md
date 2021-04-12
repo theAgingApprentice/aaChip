@@ -99,11 +99,11 @@ test/test_main.cpp:62:test_string_to_upper_case [PASSED]
 test/test_main.cpp:63:test_string_replace       [PASSED]
 -----------------------
 6 Tests 0 Failures 0 Ignored
-======================================================================== [PASSED] Took 13.70 seconds 
+==================================== [PASSED] Took 13.70 seconds 
 Test    Environment    Status    Duration
 ------  -------------  --------  ------------
 *       featheresp32   PASSED    00:00:13.699
-======================================================================== 1 succeeded in 00:00:13.699 
+==================================== 1 succeeded in 00:00:13.699 
 ```
 
 We are also looking at PlatformIO's support of 
