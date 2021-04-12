@@ -111,8 +111,8 @@ Test    Environment    Status    Duration
 
 We are also looking at PlatformIO's support of 
 [Github Actions](https://docs.platformio.org/en/latest/integration/ci/github-actions.html) 
-to see what can be accomplished for Arduino projects. We did look at TravisCI 
-but since it costs money we decided to skip that very promising option. 
+to see what can be accomplished for Arduino projects. We do not want to pay to 
+use TravisCI. 
 
 ## Releases
 * We use the [SemVer](http://semver.org/) numbering scheme for our releases. 
