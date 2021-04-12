@@ -70,14 +70,46 @@ association to the remote repository by issuing the command `git remote add
 origin https://github.com/theAgingApprentice/aaChip.git` to set up the remote. 
 
 ## Running tests
-As part of our CI/CD software development process we use the PlatformIO C/C++ 
-unit testing tool called [unity](https://github.com/ThrowTheSwitch/Unity) to 
-run the test script test_main.cpp located located in the test directory off 
-the root of the repository. Full instrucitns on how to write and run these tests
-can be found on the PlatformIO website 
+As part of our CI/CD software development process we want to run automated tests 
+every time new code is pushed to the main branch. To date we have not managed to
+do this though we have experimented with the PlatformIO C/C++ unit testing tool 
+called [unity](https://github.com/ThrowTheSwitch/Unity). We have a dummy script
+called [test_main.cpp](test/test_main.cpp) located located in the test directory 
+off the root of the repository. This test does nothing useful at the moment and
+it may not even make sense to run tests on a class such as this. Full 
+instructions on how to write and run these test can be found on the PlatformIO 
+website 
 [here](https://docs.platformio.org/en/latest/tutorials/espressif32/arduino_debugging_unit_testing.html#writing-unit-tests). 
-We are currenty also loking at TravisCI to see if we wish to automate test 
-scripts during checkin. 
+If you wish to run the tests you must do so manally while in Visual Studio Code 
+and PlatformIO:
+
+1. Click the PlatformIO Icon in the Visual Studio Code Activity bar along the left
+hand side of your screen.
+2.  Expand the Advanced menu item.
+3.  Click the Test menu item.
+
+The tests will then run and show you results like this.
+
+```
+test/test_main.cpp:58:test_string_concat        [PASSED]
+test/test_main.cpp:59:test_string_substring     [PASSED]
+test/test_main.cpp:60:test_string_index_of      [PASSED]
+test/test_main.cpp:61:test_string_equal_ignore_case     [PASSED]
+test/test_main.cpp:62:test_string_to_upper_case [PASSED]
+test/test_main.cpp:63:test_string_replace       [PASSED]
+-----------------------
+6 Tests 0 Failures 0 Ignored
+======================================================================== [PASSED] Took 13.70 seconds 
+Test    Environment    Status    Duration
+------  -------------  --------  ------------
+*       featheresp32   PASSED    00:00:13.699
+======================================================================== 1 succeeded in 00:00:13.699 
+```
+
+We are also looking at PlatformIO's support of 
+[Github Actions](https://docs.platformio.org/en/latest/integration/ci/github-actions.html) 
+to see what can be accomplished for Arduino projects. We did look at TravisCI 
+but since it costs money we decided to skip that very promising option. 
 
 ## Releases
 * We use the [SemVer](http://semver.org/) numbering scheme for our releases. 
