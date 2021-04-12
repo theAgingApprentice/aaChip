@@ -30,13 +30,12 @@ Written by Old Squire for the Aging Apprentice.
 
 ## Development environment
 This library was written using the following tools:
-* [<img src="/img/vscLogo.png" width="15" height="15">]
-(https://code.visualstudio.com/docs) Microsoft's Visual Studio Code source code 
-editor. 
+* [<img src="/img/vscLogo.png" width="15" height="15">](https://code.visualstudio.com/docs) 
+Microsoft's Visual Studio Code source code editor. 
 * [<img src="/img/pioLogo.png" width="20" height="15">](https://platformio.org/) 
-PlatformIO plugin [embedded software]
-(https://en.wikipedia.org/wiki/Embedded_software) application [IDE]
-(https://en.wikipedia.org/wiki/Integrated_development_environment). 
+PlatformIO plugin 
+[embedded software](https://en.wikipedia.org/wiki/Embedded_software) application 
+[IDE](https://en.wikipedia.org/wiki/Integrated_development_environment). 
 
 <span style="color:green">suggestion:</span> If you are using the standard 
 Arduino IDE for your project then you should probably avoid using this library 
@@ -44,8 +43,8 @@ unless you are comfortable navigating the subtle differences bewteen how your
 envoronment bahaves and how the environment used to create this library behaved.
 
 ## Code documentation
-As part of our CI/CD software development process we use [Github Actions]
-(https://docs.github.com/en/actions) to automatically generate up-to-date 
+As part of our CI/CD software development process we use 
+[Github Actions](https://docs.github.com/en/actions) to automatically generate up-to-date 
 documentation via [Doxygen](https://www.doxygen.nl/index.html) every time the 
 MAIN branch gets updated. The output from Doxygen is placed in the docs folder 
 found in the root of the repository. This repository has an associated 
@@ -55,12 +54,10 @@ can be viewed in your web browser [here]
 (https://theagingapprentice.github.io/aaChip/html/).    
 
 ## Microprocessor compatibility
-This library has only been tested on the [Adafruit Huzzah32]
-(https://learn.adafruit.com/adafruit-huzzah32-esp32-feather) development board 
-containing the [Espressif ESP WROOM32 SOC]
-(https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf) 
-featuring a pair of [Cadence/Xtensa®32-bit LX6 microprocessors]
-(https://mirrobo.ru/wp-content/uploads/2016/11/Cadence_Tensillica_Xtensa_LX6_ds.pdf). 
+This library has only been tested on the [Adafruit Huzzah32](https://learn.adafruit.com/adafruit-huzzah32-esp32-feather) 
+development board containing the 
+[Espressif ESP WROOM32 SOC](https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf) 
+featuring a pair of [Cadence/Xtensa®32-bit LX6 microprocessors](https://mirrobo.ru/wp-content/uploads/2016/11/Cadence_Tensillica_Xtensa_LX6_ds.pdf). 
 
 ## Installing
 These instructions assume that you have [Git](https://git-scm.com/) installed on 
@@ -79,8 +76,7 @@ unit testing tool called [unity](https://github.com/ThrowTheSwitch/Unity) to
 run the test script test_main.cpp located located in the test directory off 
 the root of the repository. Full instrucitns on how to write and run these tests
 can be found on the PlatformIO website 
-[here]
-(https://docs.platformio.org/en/latest/tutorials/espressif32/arduino_debugging_unit_testing.html#writing-unit-tests). 
+[here](https://docs.platformio.org/en/latest/tutorials/espressif32/arduino_debugging_unit_testing.html#writing-unit-tests). 
 We are currenty also loking at TravisCI to see if we wish to automate test 
 scripts during checkin. 
 
@@ -89,8 +85,8 @@ scripts during checkin.
 * There is no stable release of this library at this time. 
 
 ## Examples
-There is an [example sketch]
-(https://github.com/theAgingApprentice/aaChip/blob/main/examples/callAllExample/callAllExample.cpp) 
+There is an 
+[example sketch](https://github.com/theAgingApprentice/aaChip/blob/main/examples/callAllExample/callAllExample.cpp) 
 that shows you how to use this class.   
 
 ## Acknowledgements
