@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['aachip_0',['aaChip',['../classaa_chip.html',1,'aaChip'],['../classaa_chip.html#a046d2e33f9548e7d9d26319cf6151d49',1,'aaChip::aaChip()']]],
-  ['aachip_20class_1',['aaChip Class',['../index.html',1,'']]]
+  ['aachip_0',['aaChip',['../classaa_chip.html',1,'']]],
+  ['aachip_2eh_1',['aaChip.h',['../aa_chip_8h.html',1,'']]],
+  ['appcore_2',['appCore',['../aa_chip_8h.html#a7c24a72f7f30cede1f8d6cb9795afc7e',1,'callAllExample.cpp']]]
 ];
