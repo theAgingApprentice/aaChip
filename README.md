@@ -45,16 +45,18 @@ envoronment bahaves and how the environment used to create this library behaved.
 
 ## Code documentation
 As part of our CI/CD software development process we use 
-[Github Actions](https://docs.github.com/en/actions) to automatically generate up-to-date 
-documentation via [Doxygen](https://www.doxygen.nl/index.html) every time the 
-MAIN branch gets updated. The output from Doxygen is placed in the docs folder 
-found in the root of the repository. This repository has an associated 
+[Github Actions](https://docs.github.com/en/actions) to automatically generate
+up-to-date documentation via [Doxygen](https://www.doxygen.nl/index.html) every 
+time the **main** branch gets updated. The output from Doxygen is placed in the 
+**root** diretory of the **gh-pages** branch. This repository has an associated 
 [Github Pages](https://pages.github.com/) site that contains all of the Doxygen
 tags and assorted embedded comments from the code itself. This documentation 
-can be viewed in your web browser [here](https://theagingapprentice.github.io/aaChip/html/).    
+can be viewed in your web browser 
+[here](https://theagingapprentice.github.io/aaChip/html/).    
 
 ## Microprocessor compatibility
-This library has only been tested on the [Adafruit Huzzah32](https://learn.adafruit.com/adafruit-huzzah32-esp32-feather) 
+This library has only been tested on the 
+[Adafruit Huzzah32](https://learn.adafruit.com/adafruit-huzzah32-esp32-feather) 
 development board containing the 
 [Espressif ESP WROOM32 SOC](https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf) 
 featuring a pair of [Cadence/Xtensa®32-bit LX6 microprocessors](https://mirrobo.ru/wp-content/uploads/2016/11/Cadence_Tensillica_Xtensa_LX6_ds.pdf). 
