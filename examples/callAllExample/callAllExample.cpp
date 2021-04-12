@@ -1,28 +1,47 @@
-/************************************************************************************
+/******************************************************************************
  * @file callAllExample.cpp
  *
- * @author theAgingApprentice
+ * @page Example sketch showing how to use the aaChip class. 
+ * 
+ * @section intro_sec Introduction
  *
- * @brief Example script showing how to call all the methods of the aaChip class. 
+ * This is an example sketch provided with the aaChip library that shows how
+ * to call all of the functions avaiable via this class and send the 
+ * information to the serial console.
  *
- * @details Dumps all known information about the CPU that the Arduino binary is 
- * running on and send it to the serial console. 
+ * @section dependencies Dependencies
+ * 
+ * This sketch class depends on on the following libraries:
+ * * <a href="https://github.com/espressif/arduino-esp32">Arduino.h</a>. This 
+ * is the Arduino core library that comes bundled with PlatformIO.
+ * * <a href="https://github.com/theAgingApprentice/aaChip">aaChip.h</a>. This 
+ * is one of the Aging Apprentice's libraries. It exposes information about the 
+ * microprocessor that is hosting the firmware. 
  *
- * @copyright Copyright (c) 2021 the Aging Apprentice
- * Permission is hereby granted, free of charge, to any person obtaining a copy of 
- * this software and associated documentation files (the "Software"), to deal in the 
- * Software without restriction, including without limitation the rights to use, copy, 
- * modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, 
- * and to permit persons to whom the Software is furnished to do so, subject to the 
- * following conditions: The above copyright notice and this permission notice shall 
- * be included in all copies or substantial portions of the Software. THE SOFTWARE 
- * IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING 
- * BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR 
- * PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE 
- * LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, 
- * TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE 
- * USE OR OTHER DEALINGS IN THE SOFTWARE.
-  ***********************************************************************************/
+ * @section author Author(s)
+ *
+ * Written by Old Squire for the Aging Apprentice.
+ *
+ * @section license license
+ *
+ * Copyright 2021 the Aging Apprentice 
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to 
+ * deal in the Software without restriction, including without limitation the 
+ * rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+ * sell copies of the Software, and to permit persons to whom the Software is 
+ * furnished to do so, subject to the following conditions: The above copyright
+ * notice and this permission notice shall be included in all copies or 
+ * substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+ * IN THE SOFTWARE.  
+ *****************************************************************************/ 
 #include <Arduino.h> // Arduino Core for ESP32. Comes with Platform.io.
 #include <aaChip.h> // Required for retrieving CPU details.
 
