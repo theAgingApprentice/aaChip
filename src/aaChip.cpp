@@ -1,5 +1,5 @@
 /******************************************************************************
- * @file mainpage.dox
+ * @file aaChip.cpp
  *
  * @mainpage the Aging Apprentice microprcessor information class 
  * 
