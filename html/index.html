@@ -117,7 +117,27 @@ Installing</h2>
 </ol>
 <h2><a class="anchor" id="autotoc_md14"></a>
 Running tests</h2>
-<p>As part of our CI/CD software development process we use the PlatformIO C/C++ unit testing tool called <a href="https://github.com/ThrowTheSwitch/Unity">unity</a> to run the test script test_main.cpp located located in the test directory off the root of the repository. Full instrucitns on how to write and run these tests can be found on the PlatformIO website <a href="https://docs.platformio.org/en/latest/tutorials/espressif32/arduino_debugging_unit_testing.html#writing-unit-tests">here</a>. We are currenty also loking at TravisCI to see if we wish to automate test scripts during checkin.</p>
+<p>As part of our CI/CD software development process we want to run automated tests every time new code is pushed to the main branch. To date we have not managed to do this though we have experimented with the PlatformIO C/C++ unit testing tool called <a href="https://github.com/ThrowTheSwitch/Unity">unity</a>. We have a dummy script called <a href="test/test_main.cpp">test_main.cpp</a> located located in the test directory off the root of the repository. This test does nothing useful at the moment and it may not even make sense to run tests on a class such as this. Full instructions on how to write and run these test can be found on the PlatformIO website <a href="https://docs.platformio.org/en/latest/tutorials/espressif32/arduino_debugging_unit_testing.html#writing-unit-tests">here</a>. If you wish to run the tests you must do so manally while in Visual Studio Code and PlatformIO:</p>
+<ol type="1">
+<li>Click the PlatformIO Icon in the Visual Studio Code Activity bar along the left hand side of your screen.</li>
+<li>Expand the Advanced menu item.</li>
+<li>Click the Test menu item.</li>
+</ol>
+<p>The tests will then run and show you results like this.</p>
+<div class="fragment"><div class="line">test/test_main.cpp:58:test_string_concat        [PASSED]</div>
+<div class="line">test/test_main.cpp:59:test_string_substring     [PASSED]</div>
+<div class="line">test/test_main.cpp:60:test_string_index_of      [PASSED]</div>
+<div class="line">test/test_main.cpp:61:test_string_equal_ignore_case     [PASSED]</div>
+<div class="line">test/test_main.cpp:62:test_string_to_upper_case [PASSED]</div>
+<div class="line">test/test_main.cpp:63:test_string_replace       [PASSED]</div>
+<div class="line">-----------------------</div>
+<div class="line">6 Tests 0 Failures 0 Ignored</div>
+<div class="line">======================================================================== [PASSED] Took 13.70 seconds </div>
+<div class="line">Test    Environment    Status    Duration</div>
+<div class="line">------  -------------  --------  ------------</div>
+<div class="line">*       featheresp32   PASSED    00:00:13.699</div>
+<div class="line">======================================================================== 1 succeeded in 00:00:13.699 </div>
+</div><!-- fragment --><p>We are also looking at PlatformIO's support of <a href="https://docs.platformio.org/en/latest/integration/ci/github-actions.html">Github Actions</a> to see what can be accomplished for Arduino projects. We did look at TravisCI but since it costs money we decided to skip that very promising option.</p>
 <h2><a class="anchor" id="autotoc_md15"></a>
 Releases</h2>
 <ul>

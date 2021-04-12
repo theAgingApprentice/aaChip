@@ -36,7 +36,37 @@ These instructions assume that you have \href{https://git-scm.com/}{\texttt{ Git
 \item Issue the command {\ttfamily git clone \href{https://github.com/theAgingApprentice/aaChip.git}{\texttt{ https\+://github.\+com/the\+Aging\+Apprentice/aa\+Chip.\+git}}}.
 \item Issue the command {\ttfamily git remote}. If you get back the response {\itshape origin} then you are all set. If you get a blank response back then you must set up an association to the remote repository by issuing the command {\ttfamily git remote add origin \href{https://github.com/theAgingApprentice/aaChip.git}{\texttt{ https\+://github.\+com/the\+Aging\+Apprentice/aa\+Chip.\+git}}} to set up the remote.
 \end{DoxyEnumerate}\hypertarget{index_autotoc_md14}{}\doxysubsection{Running tests}\label{index_autotoc_md14}
-As part of our CI/\+CD software development process we use the Platform\+IO C/\+C++ unit testing tool called \href{https://github.com/ThrowTheSwitch/Unity}{\texttt{ unity}} to run the test script test\+\_\+main.\+cpp located located in the test directory off the root of the repository. Full instrucitns on how to write and run these tests can be found on the Platform\+IO website \href{https://docs.platformio.org/en/latest/tutorials/espressif32/arduino_debugging_unit_testing.html\#writing-unit-tests}{\texttt{ here}}. We are currenty also loking at Travis\+CI to see if we wish to automate test scripts during checkin.\hypertarget{index_autotoc_md15}{}\doxysubsection{Releases}\label{index_autotoc_md15}
+As part of our CI/\+CD software development process we want to run automated tests every time new code is pushed to the main branch. To date we have not managed to do this though we have experimented with the Platform\+IO C/\+C++ unit testing tool called \href{https://github.com/ThrowTheSwitch/Unity}{\texttt{ unity}}. We have a dummy script called \href{test/test_main.cpp}{\texttt{ test\+\_\+main.\+cpp}} located located in the test directory off the root of the repository. This test does nothing useful at the moment and it may not even make sense to run tests on a class such as this. Full instructions on how to write and run these test can be found on the Platform\+IO website \href{https://docs.platformio.org/en/latest/tutorials/espressif32/arduino_debugging_unit_testing.html\#writing-unit-tests}{\texttt{ here}}. If you wish to run the tests you must do so manally while in Visual Studio Code and Platform\+IO\+:
+
+
+\begin{DoxyEnumerate}
+\item Click the Platform\+IO Icon in the Visual Studio Code Activity bar along the left hand side of your screen.
+\item Expand the Advanced menu item.
+\item Click the Test menu item.
+\end{DoxyEnumerate}
+
+The tests will then run and show you results like this.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{test/test\_main.cpp:58:test\_string\_concat        [PASSED]}
+\DoxyCodeLine{test/test\_main.cpp:59:test\_string\_substring     [PASSED]}
+\DoxyCodeLine{test/test\_main.cpp:60:test\_string\_index\_of      [PASSED]}
+\DoxyCodeLine{test/test\_main.cpp:61:test\_string\_equal\_ignore\_case     [PASSED]}
+\DoxyCodeLine{test/test\_main.cpp:62:test\_string\_to\_upper\_case [PASSED]}
+\DoxyCodeLine{test/test\_main.cpp:63:test\_string\_replace       [PASSED]}
+\DoxyCodeLine{-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}
+\DoxyCodeLine{6 Tests 0 Failures 0 Ignored}
+\DoxyCodeLine{======================================================================== [PASSED] Took 13.70 seconds }
+\DoxyCodeLine{Test    Environment    Status    Duration}
+\DoxyCodeLine{-\/-\/-\/-\/-\/-\/  -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/  -\/-\/-\/-\/-\/-\/-\/-\/  -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}
+\DoxyCodeLine{*       featheresp32   PASSED    00:00:13.699}
+\DoxyCodeLine{======================================================================== 1 succeeded in 00:00:13.699 }
+
+\end{DoxyCode}
+
+
+We are also looking at Platform\+IO\textquotesingle{}s support of \href{https://docs.platformio.org/en/latest/integration/ci/github-actions.html}{\texttt{ Github Actions}} to see what can be accomplished for Arduino projects. We did look at Travis\+CI but since it costs money we decided to skip that very promising option.\hypertarget{index_autotoc_md15}{}\doxysubsection{Releases}\label{index_autotoc_md15}
 
 \begin{DoxyItemize}
 \item We use the \href{http://semver.org/}{\texttt{ Sem\+Ver}} numbering scheme for our releases.
