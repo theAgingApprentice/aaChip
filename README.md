@@ -113,7 +113,7 @@ but since it costs money we decided to skip that very promising option.
 
 ## Releases
 * We use the [SemVer](http://semver.org/) numbering scheme for our releases. 
-* There is no stable release of this library at this time. 
+* The latest stable release is [v1.0.0](https://github.com/theAgingApprentice/aaChip/releases/tag/v1.0.0). 
 
 ## Examples
 There is an 
