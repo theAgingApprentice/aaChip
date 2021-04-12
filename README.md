@@ -50,8 +50,7 @@ MAIN branch gets updated. The output from Doxygen is placed in the docs folder
 found in the root of the repository. This repository has an associated 
 [Github Pages](https://pages.github.com/) site that contains all of the Doxygen
 tags and assorted embedded comments from the code itself. This documentation 
-can be viewed in your web browser [here]
-(https://theagingapprentice.github.io/aaChip/html/).    
+can be viewed in your web browser [here](https://theagingapprentice.github.io/aaChip/html/).    
 
 ## Microprocessor compatibility
 This library has only been tested on the [Adafruit Huzzah32](https://learn.adafruit.com/adafruit-huzzah32-esp32-feather) 
