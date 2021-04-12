@@ -16,9 +16,10 @@
 * [Acknowledgements](#Acknowledgements)
 
 ## Overview
-This repository contains an Arduino class retrieves information about the 
+This repository contains an Arduino class that retrieves information about the 
 microprocessor that is hosting the Arduino binary. It is part of a series 
-of classes made to support a standard set of APIs for robot platforms. 
+of classes made to support a standard set of APIs for experimental robot 
+platforms. 
 
 ## Dependencies
 This class depends on <a href="https://github.com/espressif/arduino-esp32">
