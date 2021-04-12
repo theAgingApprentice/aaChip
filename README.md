@@ -42,7 +42,7 @@ As part of our CI/CD software development process we use the PlatformIO C/C++ un
 * There is no stable release of this library at this time. 
 
 ## Examples
-There is an example sketch provided in the ***examples/callAllExample*** directory that shows yu how to use this class.   
+There is an [example sketch](https://github.com/theAgingApprentice/aaChip/blob/main/examples/callAllExample/callAllExample.cpp) that shows you how to use this class.   
 
 ## Acknowledgements
 * The many folks involved in porting the Arduino libraries over to the ESP32 SOC.
