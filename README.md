@@ -116,7 +116,7 @@ use TravisCI.
 
 ## Releases
 * We use the [SemVer](http://semver.org/) numbering scheme for our releases. 
-* The latest stable release is [v1.0.0](https://github.com/theAgingApprentice/aaChip/releases/tag/v1.0.0). 
+* The latest stable release is [v1.0.1](https://github.com/theAgingApprentice/aaChip/releases/tag/v1.0.1). 
 
 ## Examples
 There is an 
